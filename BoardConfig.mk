@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from the proprietary version
--include vendor/moto/ghost/BoardConfigVendor.mk
+-include vendor/motorola/ghost/BoardConfigVendor.mk
 
 LOCAL_PATH := device/moto/ghost
 
