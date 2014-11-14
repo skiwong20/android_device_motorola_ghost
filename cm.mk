@@ -1,4 +1,4 @@
-$(call inherit-product, device/moto/ghost/full_ghost.mk)
+$(call inherit-product, device/motorola/ghost/full_ghost.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
