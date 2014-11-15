@@ -135,19 +135,25 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml
 
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+
 # Motorola
 PRODUCT_PACKAGES += \
     aplogd \
     charge_only_mode \
 
+
 # NFC
-#PRODUCT_PACKAGES += \
-#    libnfc \
-#    libnfc_jni \
-##    nfc.msm8960 \
-#    Nfc \
-#    Tag \
-#    com.android.nfc_extras
+PRODUCT_PACKAGES += \
+    libnfc \
+    libnfc_jni \
+    nfc.msm8960 \
+    Nfc \
+    Tag \
+    com.android.nfc_extras
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
