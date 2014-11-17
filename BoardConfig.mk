@@ -93,6 +93,9 @@ TARGET_INIT_VENDOR_LIB := libinit_ghost
 TARGET_NR_SVC_SUPP_GIDS := 28
 TARGET_UNIFIED_DEVICE := true
 
+# Logging
+TARGET_USES_LOGD := false
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
