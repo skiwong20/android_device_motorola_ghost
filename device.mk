@@ -144,8 +144,7 @@ PRODUCT_PACKAGES += \
     aplogd \
     charge_only_mode \
 
-
- NFC
+#NFC
 PRODUCT_PACKAGES += \
     libnfc \
     libnfc_jni \
